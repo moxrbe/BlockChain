@@ -1,3 +1,19 @@
+:root {
+    --body: #fff;
+    --txt: #000;
+    --txt2:#280CD7;
+    --link: #000;
+    --font-montserrat: 'Montserrat';
+    --font-bebasneue:'BebasNeue';
+    --icon: #ffff;
+    --btn: #000;
+    --border: #000;
+}
+
+body {
+    background: #EEEEEE;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,22 +21,25 @@
 }
 
 .container {
-    max-width: 1170px;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.container-small {
+    max-width: 1360px;
     margin: 0 auto;
     padding: 0 15px;
 }
 *::-webkit-scrollbar {
     width: 7px;
-    background: #1C1B18;
+    background: #fff;
 }
 *::-webkit-scrollbar-thumb {
-    background: #eb2629;
+    background: #280CD7;
     border-radius: 10px;
 }
 
-body{
-    font-family: 'Muller';
-}
+
 
 a{
     text-decoration: none;

@@ -1,6 +1,61 @@
-@mixin font($size, $weight, $color, $height) {
+:root {
+    --body: #fff;
+    --txt: #000;
+    --txt2: #280CD7;
+    --link: #000;
+    --font-montserrat: 'Montserrat';
+    --font-bebasneue: 'BebasNeue';
+    --icon: #ffff;
+    --btn: #000;
+    --border: #000;
+}
+
+@mixin font($size, $weight, $color, $height, $letter) {
     font-size: $size;
     font-weight: $weight;
     color: $color;
     line-height: $height;
+    letter-spacing: $letter;
+}
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flexBetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flexStart {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+@mixin flex1 {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin flex2 {
+    display: flex;
+    align-items: center;
+}
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin borderBottom {
+    border-bottom: 1px solid #000;
+}
+
+@mixin Montserrat {
+    font-family: var(--font-montserrat);
+}
+
+@mixin BebasNeue {
+    font-family: var(--font-bebasneue);
 }

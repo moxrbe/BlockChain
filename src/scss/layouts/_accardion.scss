@@ -1,0 +1,91 @@
+.accardion{
+
+    margin-bottom: 230px;
+.accardion__title {
+    @include font(144px, 700, #000, 130px, 0);
+    @include BebasNeue;
+    margin-top: 250px;
+    margin-bottom: 80px;
+    text-align: center;
+    span{
+        color: #280CD7;
+    }
+}
+
+
+
+.accordion {
+    background-color: #eee;
+    cursor: pointer;
+    padding: 66px 48px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    @include font(58px, 700, #000, 58px, 0);
+    @include BebasNeue;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    letter-spacing: 3px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.11);
+    @include flex2;
+    column-gap: 30px;
+    .plus{
+        margin-left: auto;
+        transition: 0.3s;
+    }
+
+    span{
+        color: #280CD7;
+    }
+    &.active {
+        background: #fff;
+        transition: 0.2s;
+        border: none;
+        .plus{
+            transform: rotate(45deg);
+        }
+    }
+  }
+ 
+
+  
+  .panel {
+    padding: 0 88px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+        p{
+            &:last-child{
+                padding-bottom: 70px;
+            }
+        }
+    
+    p{
+        @include font(24px, 400, #000, 40px, 0);
+    }
+  }
+
+  .accardion__btn{
+      padding: 25px 52px;
+      background: #000;
+      @include font(30px, 700, #fff, 30px, 0);
+      @include BebasNeue;
+      border-radius: 50px;
+      margin: 0 auto;
+      margin-top: 70px;
+      border: 1px solid rgba(207, 207, 207, 0.3);
+      display: flex;
+      transition: 0.3s;
+      &:hover{
+          color: #000;
+          background: none;
+          border: 1px solid #000;
+      }
+  }
+}

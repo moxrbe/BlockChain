@@ -1,0 +1,51 @@
+header {
+
+
+
+    background: url(/img/header-banner.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+    .header__nav {
+
+        .nav__container {
+            @include flex1;
+            padding: 40px 0;
+            @include borderBottom;
+        }
+
+        .header__nav-list {
+            @include flex2;
+            column-gap: 53px;
+        }
+
+
+        .header__nav-link {
+            @include font(20px, 600, #000, 15px, -2.5%);
+            @include Montserrat;
+            text-transform: capitalize;
+        }
+
+        .header__nav-number {
+            @include BebasNeue;
+            @include font(36px, 700, #000, 32px, 2.5%);
+            @include flexCenter;
+            column-gap: 10px;
+        }
+    }
+
+    .header__title {
+        @include BebasNeue;
+        @include font(46px, 700, #280CD7, 46px, 2px);
+        text-align: center;
+        margin-top: 25px;
+        text-transform: uppercase;
+        padding-bottom: 80px;
+        span{
+            @include font(46px, 700, #000, 46px, 5%);
+            margin-right: 20px;
+        }
+    }
+
+}

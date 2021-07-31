@@ -1,0 +1,91 @@
+.algoritm {
+    margin-top: 150px;
+    position: relative;
+
+    .alg__banner {
+        position: absolute;
+        left: -0.5%;
+        top: -25%;
+        z-index: -1;
+
+    }
+
+    .algoritm__online {
+        max-width: 410px;
+        width: 100%;
+        @include font(24px, 500, #000, 30px, 0);
+        @include Montserrat;
+    }
+
+    .algoritm__title {
+        max-width: 470px;
+        width: 100%;
+        @include font(96px, 700, #000, 80px, 0);
+        @include BebasNeue;
+        margin-top: 10px;
+
+        span {
+            color: #fff;
+        }
+    }
+
+    .algoritm__txt {
+        max-width: 500px;
+        width: 100%;
+        @include font(24px, 500, #000, 34px, 0);
+        @include Montserrat;
+        margin-top: 10px;
+    }
+
+    .algotritm__prices {
+        @include flex2;
+        column-gap: 45px;
+        margin-top: 50px;
+
+        .algoritm__price {
+            @include font(65px, 400, #000, 65px, 0);
+            @include BebasNeue;
+
+            span {
+                @include font(65px, 700, #000, 65px, 0);
+                @include BebasNeue;
+            }
+        }
+
+        .algoritm__btn {
+            padding: 20px 55px;
+            background: #000;
+            @include font(30px, 700, #fff, 30px, 0);
+            @include BebasNeue;
+            border-radius: 50px;
+            border: 1px solid rgba(207, 207, 207, 0.3);
+            transition: 0.3s;
+
+            &:hover {
+                background: none;
+                color: #000;
+                border: 1px solid #000;
+            }
+        }
+    }
+
+    .alg__img {
+        top: 10%;
+        right: 10%;
+        border-radius: 70%;
+        position: absolute;
+        transform: rotate(-25deg);
+    }
+
+    .alg__img2 {
+        top: 10%;
+        right: 32%;
+        border-radius: 70%;
+        position: absolute;
+        transform: rotate(25deg);
+    }
+    .give__card{
+        margin-top: 250px;
+    }
+
+}

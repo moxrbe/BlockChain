@@ -1,0 +1,34 @@
+main {
+
+    .lesson__cards{
+        @include flexBetween;
+        padding-bottom: 100px;
+        .lesson__card{
+            &:first-child{
+                width: 266px;
+            }
+            &:nth-child(2){
+                width: 288px;
+            }
+            &:nth-child(3){
+                width: 300px;
+            }
+            &:last-child{
+                width: 350px;
+            }
+            height: 100%;
+            .lesson__card-title{
+                @include font(48px, 700, #000, 60px, 0);
+                @include BebasNeue;
+                margin-top: 42px;
+            }
+            .lesson__card-txt{
+                @include font(20px, 600, #000, 28px, 0);
+                @include Montserrat;
+            }
+        }
+    }
+
+
+
+}

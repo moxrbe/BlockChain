@@ -1,0 +1,73 @@
+.learn {
+
+    .learn__title {
+        @include font(144px, 700, #000, 130px, 0);
+        @include BebasNeue;
+        text-align: center;
+        span {
+            color: #280CD7;
+        }
+    }
+    .learn__txt{
+        @include font(32px, 600, #000, 38px, 0);
+        @include Montserrat;
+        text-align: center;
+        max-width: 950px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .learn__cards{
+        margin-top: 80px;
+        @include flex2;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        row-gap: 60px;
+        column-gap: 10px;
+        .learn__card{
+            max-width: 550px;
+            width: 100%;
+            &:first-child{
+               .learn__card-txt{
+                max-width: 552px;
+                width: 100%;
+               }
+            }
+            &:nth-child(2){
+               .learn__card-txt{
+                max-width: 450px;
+                width: 100%;
+               }
+            }
+            &:nth-child(3){
+               .learn__card-txt{
+                max-width: 660px;
+                width: 100%;
+               }
+            }
+            &:last-child{
+               .learn__card-txt{
+                max-width: 460px;
+                width: 100%;
+               }
+            }
+
+            .learn__card-title{
+                @include font(60px, 700, #000, 60px, 0);   
+                @include BebasNeue;
+                padding-top: 30px;
+                padding-bottom: 20px;
+                span{
+                    color: #280CD7
+                }
+            }
+            .learn__card-txt{
+                @include font(20px, 500, #000, 30px, 0);   
+                @include Montserrat;
+                max-width: 550px;
+                width: 100%;
+            }
+        }
+    }
+}

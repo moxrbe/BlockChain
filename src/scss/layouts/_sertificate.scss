@@ -1,0 +1,52 @@
+.sertificate {
+
+    margin-top: 200px;
+
+    .sertificate__card {
+
+        position: relative;
+
+        .sertificate__banner {
+            position: absolute;
+            top: -10%;
+            right: 0;
+
+        }
+
+        .path {
+            position: absolute;
+            top: -30%;
+            right: -14%;
+            z-index: -1;
+        }
+
+        background: #280CD7;
+        padding: 65px 90px;
+        border-radius: 20px;
+
+        .sertificate__title {
+            @include font(96px, 700, #fff, 130px, 0);
+            @include BebasNeue;
+
+        }
+
+        .sertificate__txt {
+            @include font(32px, 400, #fff, 40px, 0);
+            @include Montserrat;
+            margin-top: 15px;
+            margin-bottom: 80px;
+            max-width: 440px;
+            width: 100%;
+        }
+
+        .sertificate__btn {
+            padding: 25px 52px;
+            background: #000;
+            text-transform: uppercase;
+            @include font(30px, 700, #fff, 30px, 0);
+            border-radius: 50px;
+            border: 1px solid rgba(207, 207, 207, 0.3);
+            @include BebasNeue;
+        }
+    }
+}

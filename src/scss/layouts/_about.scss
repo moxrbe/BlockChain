@@ -1,0 +1,61 @@
+main {
+
+    .about {
+        position: relative;
+        margin-top: 160px;
+        padding-bottom: 150px;
+
+        .about__banner {
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            top: -5%
+        }
+
+        .about__title {
+            @include font(144px, 700, #000, 130px, 0);
+            @include BebasNeue;
+            text-align: center;
+            max-width: 876px;
+            width: 100%;
+            margin: 0 auto;
+
+            span {
+                color: #fff;
+            }
+        }
+
+        .about__cards {
+            @include flexBetween;
+            flex-wrap: wrap;
+            row-gap: 150px;
+            margin-top: 80px;
+
+            .about__card {
+                max-width: 470px;
+                width: 100%;
+
+                .about__card-title {
+                    @include flex2;
+                    @include font(48px, 700, #000, 60px, 0);
+                    @include BebasNeue;
+                    column-gap: 15px;
+                    position: relative;
+                    margin-bottom: 15px;
+
+                    &::before {
+                        content: url(/img/check.svg);
+                        position: absolute;
+                        left: -13%;
+                        bottom: -10%;
+                    }
+                }
+
+                .about__card-txt {
+                    @include font(20px, 700, #000, 30px, 0);
+                    @include Montserrat;
+                }
+            }
+        }
+    }
+}
