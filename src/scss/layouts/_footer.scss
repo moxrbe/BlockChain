@@ -1,0 +1,14 @@
+.footer{
+    .footer__container{
+        border-top: 1px solid #000;
+        padding: 30px 0;
+        @include flexBetween;
+
+        .footer__nav-number{
+            @include BebasNeue;
+            @include font(36px, 700, #000, 32px, 2.5%);
+            @include flexCenter;
+            column-gap: 10px;
+        }
+    }
+}

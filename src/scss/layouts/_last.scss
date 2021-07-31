@@ -1,0 +1,152 @@
+.last {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    position: relative;
+
+    .last__page {
+        @include flexBetween;
+        align-items: center;
+    }
+
+    .last__img {
+        position: absolute;
+        border-radius: 70%;
+        transform: rotate(-20deg);
+        right: 39%;
+        z-index: -1;
+    }
+
+    .last__banner {
+        position: absolute;
+        left: -0.5%;
+        top: -73%;
+        z-index: -1;
+    }
+
+    .last__txt {
+        max-width: 400px;
+        width: 100%;
+        @include font(24px, 500, #000, 34px, 0);
+        @include Montserrat;
+    }
+
+    .last__title {
+        max-width: 470px;
+        width: 100%;
+        @include font(96px, 700, #000, 80px, 0);
+        @include BebasNeue;
+    }
+
+    .txt {
+        @include font(36px, 700, #000, 36px, 0);
+        @include BebasNeue;
+        margin-top: 40px;
+    }
+
+    .txt2 {
+        @include font(32px, 700, #280CD7, 32px, 0);
+        @include BebasNeue;
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .last__form {
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        width: 100%;
+        box-shadow: 0px 32px 24px rgba(56, 56, 62, 0.25);
+        border-radius: 20px;
+        background: #ffff;
+        padding: 60px;
+
+        .form__title {
+            @include font(71px, 700, #000, 88px, 0);
+            @include BebasNeue;
+            text-align: center;
+
+            span {
+                color: #280CD7;
+            }
+        }
+
+        .form__txt {
+            @include font(18px, 600, #000, 24px, 0);
+            @include Montserrat;
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+            display: flex;
+            margin: 0 auto;
+            margin-bottom: 36px;
+        }
+
+        .input__name {
+            width: 100%;
+            max-width: 490px;
+            padding: 20px 40px;
+            box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.03);
+            border-radius: 54px;
+            outline: none;
+            border: 1px #ABABAB solid;
+            @include font(20px, 600, #b0b0b0, 23px, 0);
+            @include BebasNeue;
+            text-transform: capitalize;
+            margin: 0 auto;
+            margin-bottom: 25px;
+        }
+
+        .input__num {
+            width: 100%;
+            max-width: 490px;
+            padding: 20px 40px;
+            box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.03);
+            border-radius: 54px;
+            outline: none;
+            border: 1px #ABABAB solid;
+            @include font(20px, 600, #b0b0b0, 23px, 0);
+            @include BebasNeue;
+            text-transform: capitalize;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        .input__mail {
+            width: 100%;
+            max-width: 490px;
+            padding: 20px 40px;
+            box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.03);
+            border-radius: 54px;
+            outline: none;
+            border: 1px #ABABAB solid;
+            @include font(20px, 600, #B0B0B0, 23px, 0);
+            @include BebasNeue;
+            text-transform: capitalize;
+            margin: 0 auto;
+            margin-bottom: 42px;
+        }
+
+        .input__btn {
+            border-radius: 54px;
+            width: 100%;
+            max-width: 490px;
+            padding: 20px 40px;
+            background: #280CD7;
+            @include font(30px, 700, #fff, 23px, 0);
+            @include BebasNeue;
+            border: 0.839228px solid rgba(207, 207, 207, 0.3);
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .input__txt {
+            @include font(18px, 500, #000, 23px, 0);
+            @include Montserrat;
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            align-items: baseline;
+            column-gap: 10px;
+        }
+    }
+}
