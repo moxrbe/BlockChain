@@ -5,6 +5,7 @@
     --link: #000;
     --font-montserrat: 'Montserrat';
     --font-bebasneue: 'BebasNeue';
+    --font-roboto: 'Roboto';
     --icon: #ffff;
     --btn: #000;
     --border: #000;
@@ -58,4 +59,7 @@
 
 @mixin BebasNeue {
     font-family: var(--font-bebasneue);
+}
+@mixin Roboto {
+    font-family: var(--font-roboto);
 }

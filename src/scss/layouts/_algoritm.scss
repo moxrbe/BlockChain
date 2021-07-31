@@ -30,13 +30,16 @@
         }
     }
 
-    .algoritm__txt {
+    .algoritm__item {
         max-width: 500px;
         width: 100%;
         @include font(24px, 500, #000, 34px, 0);
         @include Montserrat;
         margin-top: 10px;
-        
+        list-style-type: disc;
+        &::marker{
+            font-size: 36px;
+        }
     }
 
     .algotritm__prices {

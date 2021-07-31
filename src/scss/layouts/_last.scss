@@ -150,6 +150,10 @@
             align-items: baseline;
             column-gap: 10px;
 
+            .checkbox__link{
+                text-decoration: underline;
+                color: dodgerblue;
+            }
         }
 
         .checkbox {

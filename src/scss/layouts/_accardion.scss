@@ -65,15 +65,23 @@
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
 
-        p {
+        .panel__list{
+            list-style-type: disc;
+            li {
+                @include font(24px, 400, #000, 40px, 0);
+                @include Roboto;
+            &::marker {
+                font-size: 28px;
+            }
+            }
+        }
+        .panel__list {
             &:last-child {
                 padding-bottom: 70px;
             }
         }
 
-        p {
-            @include font(24px, 400, #000, 40px, 0);
-        }
+        
     }
 
     .accardion__btn {
