@@ -25,6 +25,10 @@ header {
             @include font(20px, 600, #000, 0, -0.025em);
             @include Montserrat;
             text-transform: capitalize;
+            transition: 0.3s;
+            &:hover{
+                color: #fff
+            }
         }
 
         .header__nav-number {
