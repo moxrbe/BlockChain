@@ -28,6 +28,7 @@
         width: 100%;
         @include font(24px, 500, #000, 34px, 0);
         @include Montserrat;
+        text-transform: uppercase;
     }
 
     .last__title {
@@ -137,6 +138,7 @@
             border: 0.839228px solid rgba(207, 207, 207, 0.3);
             margin: 0 auto;
             text-align: center;
+            cursor: pointer;
         }
 
         .input__txt {
@@ -147,6 +149,78 @@
             margin-top: 40px;
             align-items: baseline;
             column-gap: 10px;
+
+        }
+
+        .checkbox {
+
+
+            input {
+                position: absolute;
+                pointer-events: none;
+                opacity: 0;
+            }
+
+            label {
+                position: relative;
+                display: inline-block;
+                padding-left: 30px;
+                cursor: pointer;
+                user-select: none;
+            }
+
+            input[type=checkbox]+label:before {
+                content: "";
+                top: 10px;
+                left: 6px;
+                width: 0;
+                height: 0;
+                z-index: 1;
+                border: 3px solid transparent;
+                transform: rotateZ(37deg);
+                transform-origin: 100% 100%;
+            }
+
+            input[type=checkbox]+label:after {
+                content: "";
+                left: 0;
+                top: 2px;
+                width: 20px;
+                height: 20px;
+                border-radius: 5px;
+                background-color: transparent;
+                border: 1px solid #c5c9d2;
+            }
+
+            input[type=checkbox]+label:before,
+            input[type=checkbox]+label:after {
+                position: absolute;
+                left: 0;
+                z-index: 1;
+                content: "";
+                transition: border .25s, background-color .25s, width .2s .1s, height .2s .1s, top .2s .1s, left .2s .1s;
+            }
+
+            input[type=checkbox]:checked+label:before {
+                top: 4px;
+                left: 1px;
+                width: 8px;
+                height: 13px;
+                border-top: 2px solid transparent;
+                border-right: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+                border-left: 2px solid transparent;
+                transform: rotateZ(37deg);
+                transform-origin: 100% 100%;
+            }
+
+            input[type=checkbox]:checked+label:after {
+                top: 2px;
+                z-index: 0;
+                background-color: #000;
+                border: 2px solid #000;
+                border-radius: 5px;
+            }
         }
     }
 }

@@ -22,7 +22,7 @@ header {
 
 
         .header__nav-link {
-            @include font(20px, 600, #000, 15px, -2.5%);
+            @include font(20px, 600, #000, 0, -0.025em);
             @include Montserrat;
             text-transform: capitalize;
         }
